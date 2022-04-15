@@ -1,5 +1,4 @@
-
-.step-view {
+.step-view{
   width: 60px;
   height: 60px;
   border-radius: 50px;
@@ -10,7 +9,7 @@
   justify-content: center;
 }
 
-.active-view {
+ .active-view{
   background-color: gray;
 }
 
@@ -28,7 +27,9 @@
   flex-direction: column;
 }
 
-.step-view-container {
+
+
+.step-view-container{
   width: 60px;
   align-items: center;
   display: flex;
@@ -37,21 +38,26 @@
   flex-direction: column;
 }
 
-.step-title {
+.step-title{
   text-align: center;
   font-size: 14px;
   margin-top: 5px;
 }
 
-.step {
+.selected-item{
+  border: 1px solid blue !important;
+}
+
+.step{
   margin: 15px;
   flex: 1;
   flex-direction: row;
   justify-content: space-between;
   display: flex;
+
 }
 
-.step-hr {
+.step-hr{
   align-self: center;
   height: 1px;
   width: 100%;
@@ -61,9 +67,26 @@
   margin-bottom: 15px;
 }
 
-h3 {
+.grid-layout {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  
+}
+.grid-item {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 10px;
+  border-radius: 12px;
+  font-size: 16px;
   text-align: center;
-  color: gray;
+  cursor:pointer;
+}
+
+h3{
+  text-align: center;
+  color: grey;
   align-self: center;
   margin: 0%;
   padding: 0%;
@@ -72,6 +95,67 @@ h3 {
 .active {
   color: white;
 }
-span {
+span{
   text-align: center;
+}
+
+
+
+select{
+  height: 40px;
+  width: 35%;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 10px;
+  background-color: white;
+  align-self: flex-start; 
+}
+
+
+
+
+
+
+
+
+.button-view{
+  align-self: flex-end;
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+}
+
+.next-btn{
+  border-radius: 10px;
+  border: 1px solid gray;
+  background-color: gray;
+  font-size: 14px;
+  color: white;
+  width: 120px;
+  height: 40px;
+  cursor:pointer;
+}
+
+.prev-btn{
+  border-radius: 10px;
+  border: 1px solid gray;
+  background-color: white;
+  font-size: 14px;
+  color: black;
+  width: 120px;
+  height: 40px;
+  margin-right: 15px;
+  cursor:pointer;
+}
+
+
+
+.align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
 }

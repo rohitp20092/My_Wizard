@@ -7,7 +7,7 @@ import SubGenre from "./components/SubGenre";
 import AddNewSubGenre from "./components/AddNewSubGenre";
 import Information from "./components/Information";
 import Success from "./components/Success";
-
+import { genreData } from "./appData";
 
 function App() {
   return (
@@ -15,13 +15,13 @@ function App() {
       {" "}
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Genre toast={toast} />} />
-          <Route path="/sub-genre" element={<SubGenre toast={toast} />} />
+          <Route path="/" element={<Genre toast={toast} genreData={genreData}/>} />
+          <Route path="/sub-genre" element={<SubGenre toast={toast} genreData={genreData} />} />
           <Route
             path="/add-new-subgenre"
-            element={<AddNewSubGenre toast={toast} />}
+            element={<AddNewSubGenre toast={toast} genreData={genreData} />}
           />
-          <Route path="/information" element={<Information toast={toast} />} />
+          <Route path="/information" element={<Information toast={toast} genreData={genreData}/>} />
           <Route path="/success" element={<Success />} />
         </Routes>
       </BrowserRouter>
