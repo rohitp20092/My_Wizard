@@ -1,6 +1,4 @@
-* {
-  font-family: graphik;
-}
+
 .step-view {
   width: 60px;
   height: 60px;
@@ -13,7 +11,7 @@
 }
 
 .active-view {
-  background-color: #2aaae2;
+  background-color: gray;
 }
 
 .content {
@@ -22,7 +20,7 @@
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  border: 1px solid #2aaae2;
+  border: 1px solid gray;
   border-radius: 10px;
   padding: 15px;
   width: 60%;
@@ -57,7 +55,7 @@
   align-self: center;
   height: 1px;
   width: 100%;
-  background-color: #2aaae2;
+  background-color: gray;
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 15px;
@@ -65,7 +63,7 @@
 
 h3 {
   text-align: center;
-  color: #2aaae2;
+  color: gray;
   align-self: center;
   margin: 0%;
   padding: 0%;
