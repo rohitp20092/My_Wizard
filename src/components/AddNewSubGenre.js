@@ -16,8 +16,8 @@ export default function AddNewSubGenre(props) {
     if (select.subGenres.name == "") {
       toast.error("Enter Name");
     } else {
-      let length = select.genre.subgenres.length;
-      let lastId = select.genre.subgenres[length - 1].id;
+      let length = select.genre?.subgenres?.length;
+      let lastId = select.genre?.subgenres[length - 1]?.id;
       let newSubgenre = {
         id: lastId + 1,
         ...select.subGenres,
@@ -38,6 +38,15 @@ export default function AddNewSubGenre(props) {
     navigate("/sub-genre");
    
   };
+  const handleChange=(e)=>{
+   
+    dispatch(
+      setSubgenres({
+        ...select.subGenres,
+        isDescriptionRequired: e.target.checked,
+      })
+    )
+  }
 
   return (
     <div className="content">
@@ -60,18 +69,12 @@ export default function AddNewSubGenre(props) {
         />
         <label>
           <input
-            type={"checkbox"}
+            type="checkbox"
             value={select.subGenres.isDescriptionRequired}
-            onChange={() =>
-              dispatch(
-                setSubgenres({
-                  ...select.subGenres,
-                  isDescriptionRequired: !select.subgenre.isDescriptionRequired,
-                })
-              )
-            }
+            onChange={handleChange}
+            
           />
-          <p> Description is required for this subgenre</p>
+          Description is required for this subgenre
         </label>
       </div>
       <div className="button-view">

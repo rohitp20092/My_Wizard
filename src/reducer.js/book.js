@@ -32,6 +32,7 @@ export function book(state = initialState, action) {
         ...state,
         subGenres:action.payload
       }
+ 
     default:
       return state;
   }

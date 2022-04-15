@@ -27,7 +27,15 @@
   flex-direction: column;
 }
 
-
+.information-view{
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 15px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
 
 .step-view-container{
   width: 60px;
@@ -99,7 +107,48 @@ span{
   text-align: center;
 }
 
+.form-container{
+  padding: 15px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+input[type=text]{
+  height: 40px;
+  width: 90%;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 10px;
+  border: 0.5px solid gray;
+  align-self: flex-start;
+}
 
+input[type=date]{
+  height: 40px;
+  width: 25%;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 10px;
+  background-color: white;
+  align-self: flex-start;
+}
+
+input[type=number]{
+  height: 40px;
+  width: 25%;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 10px;
+  background-color: white;
+  align-self: flex-start;
+}
 
 select{
   height: 40px;
@@ -113,12 +162,49 @@ select{
   align-self: flex-start; 
 }
 
+.row-select{
+  height: 45px;
+  width: 90%;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 10px;
+  background-color: white;
+  align-self: flex-start; 
+}
 
+textarea{
+  height: 120px;
+  width: 90%;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 10px;
+  border: 0.5px solid gray;
+  align-self: flex-start;
+}
 
+label{
+  margin-top: 10px;
+}
 
+input[type=checkbox]{
+  padding-right: 10px;
+  font-size: 16px;
+  margin-top: 15px;
+  align-self: center;
 
+}
 
+.row{
+  flex-direction: row;
+  display: flex;
+  flex: 1;
+  margin-top: 10px;
 
+}
 
 .button-view{
   align-self: flex-end;
@@ -150,7 +236,17 @@ select{
   cursor:pointer;
 }
 
-
+.done-btn{
+  border-radius: 10px;
+  border: 1px solid gray;
+  background-color: gray;
+  font-size: 14px;
+  color: white;
+  width: 240px;
+  height: 40px;
+  align-self: center;
+  cursor:pointer;
+}
 
 .align-center {
   display: flex;
